@@ -1,0 +1,63 @@
+* {
+  direction: ltr;
+  text-align: left;
+  font-family: 'Scheherazade', serif;
+  font-size: 20px; }
+
+::placeholder {
+  color: rgba(111, 117, 182, 0.5); }
+
+.login {
+  background-image: url("../img/bg-login.jpg");
+  opacity: 1;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
+  padding: 50px 0 20px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .login .logo {
+    text-align: center; }
+    .login .logo a {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 40vw; }
+      .login .logo a img {
+        max-width: 100%;
+        height: auto; }
+  .login .login-form {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    padding-left: 70px;
+    margin-left: 40px;
+    border-left: 2px solid rgba(111, 117, 182, 0.5); }
+    .login .login-form h2 {
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 20px; }
+    .login .login-form .form form .form-group input[type="email"], .login .login-form .form form .form-group input[type="password"] {
+      min-height: 50px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: 1px solid #8385bf;
+      padding: 10px 15px;
+      background-color: transparent;
+      color: #fff; }
+    .login .login-form .form form .form-group label {
+      color: #fff; }
+
+/*# sourceMappingURL=login.css.map */
