@@ -1,0 +1,60 @@
+.thread {
+  padding: 40px 20px; }
+  .thread .title {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid #4166d5; }
+    .thread .title h6 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 600; }
+  .thread .body {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px; }
+    .thread .body table tr:nth-of-type(1) {
+      background-color: #4166d5;
+      color: #ffffff; }
+    .thread .body table tr td {
+      padding: 5px 10px;
+      text-align: center;
+      vertical-align: middle; }
+      .thread .body table tr td img {
+        width: 35px;
+        height: 35px;
+        max-width: 100%;
+        border-radius: 50%; }
+      .thread .body table tr td:nth-of-type(1) {
+        width: 50px; }
+      .thread .body table tr td:nth-of-type(2) {
+        text-align: left !important; }
+      .thread .body table tr td:nth-of-type(3) {
+        width: 400px;
+        text-align: left !important; }
+      .thread .body table tr td:nth-of-type(4) {
+        width: 150px; }
+
+.create-thread {
+  padding: 40px 20px; }
+  .create-thread .title {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid #4166d5; }
+    .create-thread .title h6 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 600; }
+  .create-thread .body {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px; }
+    .create-thread .body .details .button {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+/*# sourceMappingURL=thread.css.map */

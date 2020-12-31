@@ -29,7 +29,7 @@ class UsersController extends Controller
     }
     public function register(Request $request){
         $this->validate($request, [
-            "name" => "required|string",
+            "name" => "required|string|min:4",
             "email" => "required|email|unique:users",
             "password" => "required|min:6|max:10"
         ]);

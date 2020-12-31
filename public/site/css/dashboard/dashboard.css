@@ -1,0 +1,71 @@
+a:hover {
+  text-decoration: none; }
+
+.header {
+  padding: 10px 0; }
+  .header .logo img {
+    max-width: 100%; }
+  .header .links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0 20px; }
+    .header .links a {
+      font-weight: 500;
+      color: #000;
+      font-size: 16px;
+      padding-left: 50px;
+      text-transform: uppercase; }
+      .header .links a:visited {
+        text-decoration: none;
+        outline: 0; }
+      .header .links a:hover {
+        color: #fb0303; }
+
+.section-content .links-auth {
+  text-align: right;
+  padding: 20px 10px;
+  border-right: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.01); }
+  .section-content .links-auth .p-title {
+    background-color: #ffeb28;
+    padding: 5px 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px; }
+  .section-content .links-auth ul.home li {
+    margin-bottom: 10px; }
+    .section-content .links-auth ul.home li a {
+      color: #3a3a3a;
+      text-align: left;
+      background-color: #fafafa;
+      padding: 10px 15px;
+      border-bottom: 1px solid #ccc;
+      display: block; }
+      .section-content .links-auth ul.home li a:hover {
+        border-left: 3px solid #ccc; }
+  .section-content .links-auth ul.home li.active a {
+    border-left: 3px solid #ccc; }
+  .section-content .links-auth .links-hr {
+    margin: 20px 0;
+    border-top: 1px solid #cccccc; }
+.section-content ul.category li {
+  margin-bottom: 0; }
+  .section-content ul.category li:nth-of-type(1) a {
+    background-color: #000000 !important;
+    color: #ffffff !important; }
+  .section-content ul.category li a {
+    color: #3a3a3a;
+    text-align: left;
+    background-color: #fafafa;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    display: block; }
+    .section-content ul.category li a:hover {
+      border-left: 3px solid #ccc; }
+.section-content ul.category li.active a {
+  border-left: 3px solid #ccc; }
+
+/*# sourceMappingURL=dashboard.css.map */

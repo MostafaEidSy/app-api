@@ -1,0 +1,414 @@
+* {
+  font-family: "Barlow Semi Condensed", Arial, Tahoma, sans-serif; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+.position-relative {
+  position: relative; }
+
+.header {
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 0;
+  background-image: url("../img/online-marketing-agentur-bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: relative; }
+  .header .section-links {
+    height: 66px;
+    overflow: hidden;
+    width: 100%;
+    zoom: 1;
+    float: left;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box; }
+    .header .section-links .links {
+      text-align: right; }
+      .header .section-links .links a {
+        font-weight: 500;
+        color: #000;
+        font-size: 20px;
+        padding-left: 50px;
+        text-transform: uppercase; }
+        .header .section-links .links a:visited {
+          text-decoration: none;
+          outline: 0; }
+        .header .section-links .links a:hover {
+          color: #fb0303; }
+  .header .section-header-middle {
+    width: 100%;
+    zoom: 1;
+    float: left;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box; }
+    .header .section-header-middle .title-top {
+      width: 98%;
+      float: left;
+      margin: 0 1% 40px; }
+      .header .section-header-middle .title-top h5 {
+        text-align: right;
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 700;
+        letter-spacing: 0; }
+    .header .section-header-middle .title-middle {
+      width: 98%;
+      float: left;
+      margin: 0 1% 40px; }
+      .header .section-header-middle .title-middle h2 {
+        font-size: 68px;
+        line-height: 80px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        text-transform: uppercase; }
+      .header .section-header-middle .title-middle h3 {
+        text-transform: uppercase;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 400;
+        letter-spacing: 0; }
+  .header .title-bottom {
+    width: 98%;
+    float: left;
+    margin: 0 1% 0; }
+    .header .title-bottom h3 {
+      color: #fb0303;
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-align: center; }
+  .header .link-reg {
+    width: 98%;
+    float: left;
+    margin: 0 1% 40px;
+    text-align: center; }
+    .header .link-reg a {
+      background-color: #fb0303 !important;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 500; }
+      .header .link-reg a span {
+        display: inline-block;
+        padding: 15px 30px; }
+  .header .icon {
+    width: 98%;
+    margin: 0 1% 40px; }
+    .header .icon span {
+      display: block;
+      margin: 0 auto 15px; }
+      .header .icon span .fa-chevron-down {
+        font-size: 45px;
+        line-height: 45px;
+        color: #fb0303; }
+
+.section-learn {
+  padding-top: 100px; }
+  .section-learn .content {
+    padding: 0 3% 70px 0;
+    background-image: url("../img/oma-days-background.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover; }
+    .section-learn .content .info {
+      text-transform: uppercase; }
+      .section-learn .content .info h6 {
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 700;
+        letter-spacing: 0; }
+      .section-learn .content .info h2 {
+        font-size: 68px;
+        line-height: 80px;
+        font-weight: 500;
+        letter-spacing: -1px; }
+      .section-learn .content .info .hr {
+        margin: 0 auto 70px; }
+      .section-learn .content .info .box-title {
+        background-color: #fb0303;
+        transition: all .4s ease-in-out;
+        border: 2px solid transparent; }
+        .section-learn .content .info .box-title:hover {
+          background-color: #000000; }
+        .section-learn .content .info .box-title .title {
+          padding: 70px 15% 55px; }
+          .section-learn .content .info .box-title .title h3 {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 400;
+            letter-spacing: 0;
+            color: #ffffff; }
+          .section-learn .content .info .box-title .title .hr2 {
+            margin: 0 auto 10px; }
+          .section-learn .content .info .box-title .title p {
+            margin: 0 0 15px;
+            color: #ffffff; }
+      .section-learn .content .info .hr3 {
+        margin: 0 auto 70px; }
+      .section-learn .content .info h6.text-right {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        letter-spacing: 0; }
+      .section-learn .content .info .scroll {
+        color: #000000;
+        margin-left: 5px; }
+
+.section-die {
+  padding-top: 60px;
+  padding-bottom: 40px; }
+  .section-die .title h2 {
+    font-size: 68px;
+    line-height: 80px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin: 0; }
+  .section-die .box-hr .hr {
+    margin: 0 auto 65px; }
+  .section-die .box-hr .border-hr {
+    width: 100%;
+    height: 3px;
+    background-color: red; }
+
+.section-info-ser {
+  padding-bottom: 10px; }
+  .section-info-ser .single-ser {
+    margin-bottom: 20px; }
+    .section-info-ser .single-ser h4 {
+      background-color: #ffeb28;
+      padding: 5px 10px;
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 700;
+      letter-spacing: 0; }
+    .section-info-ser .single-ser ul {
+      margin: 0; }
+      .section-info-ser .single-ser ul li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center; }
+        .section-info-ser .single-ser ul li .fa-chevron-right {
+          color: #fc2323; }
+        .section-info-ser .single-ser ul li span {
+          font-size: 22px;
+          margin-left: 10px;
+          font-weight: 500; }
+
+.section-admin {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url("../img/oma-days-bg-003.png");
+  background-repeat: no-repeat;
+  background-position: left top; }
+  .section-admin .title {
+    margin-bottom: 30px; }
+    .section-admin .title h2 {
+      font-size: 68px;
+      line-height: 80px;
+      font-weight: 500;
+      letter-spacing: -1px;
+      margin: 0; }
+  .section-admin .box-hr .hr {
+    margin: 0 auto 65px; }
+  .section-admin .box-hr .border-hr {
+    width: 100%;
+    height: 3px;
+    background-color: red; }
+  .section-admin .img-admin img {
+    max-width: 100%; }
+  .section-admin .info-admin {
+    padding: 40px 20px;
+    text-transform: uppercase; }
+    .section-admin .info-admin h3 {
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 400;
+      letter-spacing: 0; }
+    .section-admin .info-admin h4 {
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 700;
+      letter-spacing: 0; }
+    .section-admin .info-admin p {
+      margin: 0 0 15px;
+      font-size: 18px; }
+
+.section-sic {
+  background: url("../img/oma-days-bg-004.png") no-repeat center fixed;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 60px; }
+  .section-sic .title {
+    padding: 100px 5%;
+    height: 626px; }
+    .section-sic .title h2 {
+      color: #fff;
+      text-shadow: 2px 2px 2px #000000;
+      font-size: 68px;
+      line-height: 80px;
+      font-weight: 500;
+      letter-spacing: -1px; }
+  .section-sic .info-section {
+    padding: 100px 3% 0;
+    height: 626px; }
+    .section-sic .info-section .box-img {
+      padding: 100px 10% 20px;
+      background-image: url("../img/event4_pic24.jpg");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      text-align: center;
+      position: relative;
+      margin-bottom: 100px; }
+      .section-sic .info-section .box-img::after {
+        content: '';
+        background-image: url("../img/event4_pic23.png");
+        position: absolute;
+        bottom: -70px;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background-size: cover; }
+      .section-sic .info-section .box-img h3 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: #ffffff; }
+      .section-sic .info-section .box-img p {
+        margin: 0 0 15px;
+        color: #ffffff; }
+    .section-sic .info-section .box-link a {
+      border-radius: 0;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 15px 10px; }
+
+.section-theme {
+  padding: 40px 0; }
+  .section-theme .single-theme {
+    margin-bottom: 20px;
+    transition: all .4s ease-in-out; }
+    .section-theme .single-theme .name {
+      margin-bottom: 15px;
+      font-size: 22px;
+      font-weight: bold; }
+    .section-theme .single-theme .info {
+      position: relative;
+      transition: all .4s ease-in-out;
+      overflow: hidden; }
+      .section-theme .single-theme .info:hover .description {
+        display: flex !important; }
+      .section-theme .single-theme .info:hover img {
+        transform: scale(1.2, 1.2); }
+      .section-theme .single-theme .info .img-theme {
+        transition: all .4s ease-in-out; }
+        .section-theme .single-theme .info .img-theme img {
+          transition: all .4s ease-in-out;
+          max-width: 100%; }
+      .section-theme .single-theme .info .description {
+        transition: all .4s ease-in-out;
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700; }
+        .section-theme .single-theme .info .description p {
+          transition: all .4s ease-in-out; }
+        .section-theme .single-theme .info .description a {
+          color: #fb0303; }
+  .section-theme .box-link {
+    padding: 50px 0; }
+    .section-theme .box-link a {
+      background-color: #ffeb28;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: 500; }
+
+.section-accordion .accordion .showFQ .card-header {
+  border-left: 1px solid red !important; }
+  .section-accordion .accordion .showFQ .card-header .num {
+    color: red !important; }
+  .section-accordion .accordion .showFQ .card-header h2 button {
+    color: red !important; }
+.section-accordion .accordion .card {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0; }
+  .section-accordion .accordion .card .card-header {
+    border: 0;
+    background-color: #fff;
+    padding: 15px 60px;
+    position: relative; }
+    .section-accordion .accordion .card .card-header .num {
+      position: absolute;
+      left: 30px;
+      top: 20px;
+      font-size: 20px;
+      font-weight: bolder; }
+    .section-accordion .accordion .card .card-header h2 button {
+      color: #000000;
+      text-decoration: none; }
+      .section-accordion .accordion .card .card-header h2 button:focus {
+        box-shadow: none !important; }
+  .section-accordion .accordion .card .card-body {
+    padding-left: 75px; }
+    .section-accordion .accordion .card .card-body a {
+      color: red; }
+  .section-accordion .accordion .card .collapse.show {
+    border-left: 1px solid red; }
+
+.section-footer {
+  margin-top: 40px;
+  padding-top: 130px;
+  padding-bottom: 90px;
+  background-image: url("../img/event4_pic27.png");
+  background-repeat: no-repeat;
+  background-position: center top; }
+  .section-footer .title {
+    margin-bottom: 40px; }
+    .section-footer .title h2 {
+      font-size: 68px;
+      line-height: 80px;
+      font-weight: 500;
+      letter-spacing: -1px;
+      color: red; }
+  .section-footer .body .info h6 {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0; }
+  .section-footer .body .info img {
+    max-width: 100%; }
+  .section-footer .social p {
+    font-size: 30px;
+    margin: 0 0 15px; }
+    .section-footer .social p a {
+      color: red; }
+
+.section-copyright {
+  padding-top: 60px;
+  margin-bottom: 40px; }
+  .section-copyright .content {
+    text-align: center;
+    color: #888; }
+    .section-copyright .content a {
+      color: #888888; }
+      .section-copyright .content a:hover {
+        color: red; }
+
+/*# sourceMappingURL=home.css.map */

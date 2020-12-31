@@ -1,0 +1,125 @@
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+.header{
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 0;
+    background-image: url('../img/online-marketing-agentur-bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    .section-links{
+        height: 66px;
+        overflow: hidden;
+        width: 100%;
+        zoom: 1;
+        float: left;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        .links{
+            text-align: right;
+            a{
+                font-weight: 500;
+                color: #000;
+                font-size: 20px;
+                padding-left: 50px;
+                text-transform: uppercase;
+                &:visited{
+                    text-decoration: none;
+                    outline: 0;
+                }
+                &:hover{
+                    color: #fb0303;
+                }
+            }
+        }
+    }
+    .section-header-middle{
+        width: 100%;
+        zoom: 1;
+        float: left;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        .title-top{
+            width: 98%;
+            float: left;
+            margin: 0 1% 40px;
+            h5{
+                text-align: right;
+                font-size: 17px;
+                line-height: 25px;
+                font-weight: 700;
+                letter-spacing: 0;
+            }
+        }
+        .title-middle{
+            margin: 0 1% 40px;
+            h1{
+                font-size: 72px;
+                line-height: 72px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            h2{
+                font-size: 28px;
+                line-height: 40px;
+                font-weight: normal;
+            }
+        }
+    }
+}
+.section-copyright{
+    padding-top: 60px;
+    margin-bottom: 40px;
+    .content{
+        text-align: center;
+        color: #888;
+        a{
+            color: #888888;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+.section-login{
+    padding: 60px 0;
+    .form{
+        max-width: 700px;
+        margin: auto;
+        form{
+            max-width: 500px;
+            margin: auto;
+            .link-pass{
+                display: block;
+                text-align: right;
+                a{
+                    color: red;
+                    font-size: 14px;
+                }
+            }
+            .form-group{
+                button{
+                    background-color: #21759b;
+                    color: #fff;
+                    border: 0;
+                    padding: 10px 20px;
+                    border-radius: 25px;
+                }
+            }
+        }
+        .link-signUp{
+            padding: 20px 0;
+            a{
+                color: red;
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+    }
+}

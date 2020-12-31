@@ -1,0 +1,63 @@
+a:hover {
+  text-decoration: none; }
+
+.header {
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 0;
+  background-image: url("../img/online-marketing-agentur-bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: relative; }
+  .header .section-links {
+    height: 66px;
+    overflow: hidden;
+    width: 100%;
+    zoom: 1;
+    float: left;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box; }
+    .header .section-links .links {
+      text-align: right; }
+      .header .section-links .links a {
+        font-weight: 500;
+        color: #000;
+        font-size: 20px;
+        padding-left: 50px;
+        text-transform: uppercase; }
+        .header .section-links .links a:visited {
+          text-decoration: none;
+          outline: 0; }
+        .header .section-links .links a:hover {
+          color: #fb0303; }
+  .header .section-header-middle .form {
+    padding: 40px 0; }
+    .header .section-header-middle .form form {
+      padding: 20px 0;
+      max-width: 500px;
+      margin: auto; }
+    .header .section-header-middle .form .btn-submit {
+      background-color: red;
+      border: 0;
+      color: #fff;
+      padding: 10px 20px; }
+  .header .section-header-middle .link-login {
+    padding: 40px 0 0; }
+    .header .section-header-middle .link-login a {
+      color: red;
+      font-size: 18px;
+      font-weight: 500; }
+
+.section-copyright {
+  padding-top: 60px;
+  margin-bottom: 40px; }
+  .section-copyright .content {
+    text-align: center;
+    color: #888; }
+    .section-copyright .content a {
+      color: #888888; }
+      .section-copyright .content a:hover {
+        color: red; }
+
+/*# sourceMappingURL=register.css.map */

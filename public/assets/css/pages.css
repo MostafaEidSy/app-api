@@ -1,0 +1,52 @@
+.pages {
+  padding: 40px 20px; }
+  .pages .title {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid #4166d5; }
+    .pages .title h6 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 600; }
+  .pages .body {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px; }
+    .pages .body table tr:nth-of-type(1) {
+      background-color: #4166d5;
+      color: #ffffff; }
+    .pages .body table tr td {
+      padding: 5px 10px;
+      text-align: center;
+      vertical-align: middle; }
+      .pages .body table tr td:nth-of-type(1) {
+        width: 50px; }
+      .pages .body table tr td:nth-of-type(2) {
+        text-align: left !important; }
+      .pages .body table tr td:nth-of-type(3) {
+        width: 200px; }
+      .pages .body table tr td:nth-of-type(4) {
+        width: 100px; }
+      .pages .body table tr td:nth-of-type(5) {
+        width: 150px; }
+
+.create-pages {
+  padding: 40px 20px; }
+  .create-pages .title {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid #4166d5; }
+    .create-pages .title h6 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 600; }
+  .create-pages .body {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px; }
+
+/*# sourceMappingURL=pages.css.map */

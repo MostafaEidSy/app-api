@@ -1,0 +1,102 @@
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+.header{
+    padding: 10px 0;
+    .logo{
+        img{
+            max-width: 100%;
+        }
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 0 20px;
+        a{
+            font-weight: 500;
+            color: #000;
+            font-size: 16px;
+            padding-left: 50px;
+            text-transform: uppercase;
+            &:visited{
+                text-decoration: none;
+                outline: 0;
+            }
+            &:hover{
+                color: #fb0303;
+            }
+        }
+    }
+}
+.section-content{
+    .links-auth{
+        text-align: right;
+        padding: 20px 10px;
+        border-right: 1px solid #ccc;
+        background-color: rgba(0,0,0,.01);
+        .p-title{
+            background-color: #ffeb28;
+            padding: 5px 15px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        ul.home{
+            li{
+                margin-bottom: 10px;
+                a{
+                    color: #3a3a3a;
+                    text-align: left;
+                    background-color: #fafafa;
+                    padding: 10px 15px;
+                    border-bottom: 1px solid #ccc;
+                    display: block;
+                    &:hover{
+                        border-left: 3px solid #ccc;
+                    }
+                }
+            }
+            li.active{
+                a{
+                    border-left: 3px solid #ccc;
+                }
+            }
+        }
+        .links-hr{
+            margin: 20px 0;
+            border-top: 1px solid #cccccc;
+        }
+    }
+    ul.category{
+        li{
+            margin-bottom: 0;
+            &:nth-of-type(1){
+                a {
+                    background-color: #000000 !important;
+                    color: #ffffff !important;
+                }
+            }
+            a{
+                color: #3a3a3a;
+                text-align: left;
+                background-color: #fafafa;
+                padding: 10px 15px;
+                border-bottom: 1px solid #ccc;
+                display: block;
+                &:hover{
+                    border-left: 3px solid #ccc;
+                }
+            }
+        }
+        li.active{
+            a{
+                border-left: 3px solid #ccc;
+            }
+        }
+    }
+}

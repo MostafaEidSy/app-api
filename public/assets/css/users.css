@@ -1,0 +1,66 @@
+.users {
+  padding: 40px 20px; }
+  .users .title {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid #4166d5; }
+    .users .title h6 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 600; }
+  .users .body {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px; }
+    .users .body table tr:nth-of-type(1) {
+      background-color: #4166d5;
+      color: #ffffff; }
+    .users .body table tr td {
+      padding: 5px 10px;
+      text-align: center;
+      vertical-align: middle; }
+      .users .body table tr td img {
+        width: 35px;
+        height: 35px;
+        max-width: 100%;
+        border-radius: 50%; }
+      .users .body table tr td:nth-of-type(1) {
+        width: 50px; }
+      .users .body table tr td:nth-of-type(2) {
+        text-align: left !important; }
+      .users .body table tr td:nth-of-type(3) {
+        width: 400px; }
+      .users .body table tr td:nth-of-type(4) {
+        width: 100px; }
+      .users .body table tr td:nth-of-type(5) {
+        width: 150px; }
+
+.create-users {
+  padding: 40px 20px; }
+  .create-users .title {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid #4166d5; }
+    .create-users .title h6 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 600; }
+  .create-users .body {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px; }
+    .create-users .body .avatar-user {
+      margin: 10px 0 20px; }
+      .create-users .body .avatar-user img {
+        padding: 10px;
+        border: 1px dashed #000;
+        border-radius: 10px;
+        width: 300px;
+        max-width: 100%;
+        box-shadow: 1px 1px 10px #888; }
+
+/*# sourceMappingURL=users.css.map */

@@ -1,0 +1,532 @@
+*{
+    font-family: "Barlow Semi Condensed", Arial, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+.position-relative{
+    position: relative;
+}
+.header{
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 0;
+    background-image: url('../img/online-marketing-agentur-bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    .section-links{
+        height: 66px;
+        overflow: hidden;
+        width: 100%;
+        zoom: 1;
+        float: left;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        .links{
+            text-align: right;
+            a{
+                font-weight: 500;
+                color: #000;
+                font-size: 20px;
+                padding-left: 50px;
+                text-transform: uppercase;
+                &:visited{
+                    text-decoration: none;
+                    outline: 0;
+                }
+                &:hover{
+                    color: #fb0303;
+                }
+            }
+        }
+    }
+    .section-header-middle{
+        width: 100%;
+        zoom: 1;
+        float: left;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        .title-top{
+            width: 98%;
+            float: left;
+            margin: 0 1% 40px;
+            h5{
+                text-align: right;
+                font-size: 17px;
+                line-height: 25px;
+                font-weight: 700;
+                letter-spacing: 0;
+            }
+        }
+        .title-middle{
+            width: 98%;
+            float: left;
+            margin: 0 1% 40px;
+            h2{
+                font-size: 68px;
+                line-height: 80px;
+                font-weight: 500;
+                letter-spacing: -1px;
+                text-transform: uppercase;
+            }
+            h3{
+                text-transform: uppercase;
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 400;
+                letter-spacing: 0;
+            }
+        }
+    }
+    .title-bottom{
+        width: 98%;
+        float: left;
+        margin: 0 1% 0;
+        h3{
+            color: #fb0303;
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 400;
+            letter-spacing: 0;
+            text-align: center;
+        }
+    }
+    .link-reg{
+        width: 98%;
+        float: left;
+        margin: 0 1% 40px;
+        text-align: center;
+        a{
+            background-color: #fb0303!important;
+            color: #ffffff;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 500;
+            span{
+                display: inline-block;
+                padding: 15px 30px;
+            }
+        }
+    }
+    .icon{
+        width: 98%;
+        margin: 0 1% 40px;
+        span{
+            display: block;
+            margin: 0 auto 15px;
+            .fa-chevron-down{
+                font-size: 45px;
+                line-height: 45px;
+                color: #fb0303;
+            }
+        }
+    }
+}
+.section-learn{
+    padding-top: 100px;
+    .content{
+        padding: 0 3% 70px 0;
+        background-image: url("../img/oma-days-background.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        .info{
+            text-transform: uppercase;
+            h6{
+                font-size: 15px;
+                line-height: 24px;
+                font-weight: 700;
+                letter-spacing: 0;
+            }
+            h2{
+                font-size: 68px;
+                line-height: 80px;
+                font-weight: 500;
+                letter-spacing: -1px;
+            }
+            .hr{
+                margin: 0 auto 70px;
+            }
+            .box-title{
+                background-color: #fb0303;
+                transition: all .4s ease-in-out;
+                border: 2px solid transparent;
+                &:hover{
+                    background-color: #000000;
+                }
+                .title{
+                    padding: 70px 15% 55px;
+                    h3{
+                        font-size: 32px;
+                        line-height: 40px;
+                        font-weight: 400;
+                        letter-spacing: 0;
+                        color: #ffffff;
+                    }
+                    .hr2{
+                        margin: 0 auto 10px;
+                    }
+                    p{
+                        margin: 0 0 15px;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .hr3{
+                margin: 0 auto 70px;
+            }
+            h6.text-right{
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 700;
+                letter-spacing: 0;
+            }
+            .scroll{
+                color: #000000;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.section-die{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    .title{
+        h2{
+            font-size: 68px;
+            line-height: 80px;
+            font-weight: 500;
+            letter-spacing: -1px;
+            margin: 0;
+        }
+    }
+    .box-hr{
+        .hr{
+            margin: 0 auto 65px;
+        }
+        .border-hr{
+            width: 100%;
+            height: 3px;
+            background-color: red;
+        }
+    }
+}
+.section-info-ser{
+    padding-bottom: 10px;
+    .single-ser{
+        margin-bottom: 20px;
+        h4{
+            background-color: #ffeb28;
+            padding: 5px 10px;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+        ul{
+            margin: 0;
+            li{
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                .fa-chevron-right{
+                    color: #fc2323;
+                }
+                span{
+                    font-size: 22px;
+                    margin-left: 10px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+.section-admin{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url('../img/oma-days-bg-003.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    .title{
+        margin-bottom: 30px;
+        h2{
+            font-size: 68px;
+            line-height: 80px;
+            font-weight: 500;
+            letter-spacing: -1px;
+            margin: 0;
+        }
+    }
+    .box-hr{
+        .hr{
+            margin: 0 auto 65px;
+        }
+        .border-hr{
+            width: 100%;
+            height: 3px;
+            background-color: red;
+        }
+    }
+    .img-admin{
+        img{
+            max-width: 100%;
+        }
+    }
+    .info-admin{
+        padding: 40px 20px;
+        text-transform: uppercase;
+        h3{
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+        h4{
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+        p{
+            margin: 0 0 15px;
+            font-size: 18px;
+        }
+    }
+}
+.section-sic{
+    background: url("../img/oma-days-bg-004.png") no-repeat center fixed;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    .title{
+        padding: 100px 5%;
+        height: 626px;
+        h2{
+            color: #fff;
+            text-shadow: 2px 2px 2px #000000;
+            font-size: 68px;
+            line-height: 80px;
+            font-weight: 500;
+            letter-spacing: -1px;
+        }
+    }
+    .info-section{
+        padding: 100px 3% 0;
+        height: 626px;
+        .box-img{
+            padding: 100px 10% 20px;
+            background-image: url('../img/event4_pic24.jpg');
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            text-align: center;
+            position: relative;
+            margin-bottom: 100px;
+            &::after{
+                content: '';
+                background-image: url('../img/event4_pic23.png');
+                position: absolute;
+                bottom: -70px;
+                left: 0;
+                width: 100%;
+                height: 70px;
+                background-size: cover;
+            }
+            h3{
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 400;
+                letter-spacing: 0;
+                color: #ffffff;
+            }
+            p{
+                margin: 0 0 15px;
+                color: #ffffff;
+            }
+        }
+        .box-link{
+            a{
+                border-radius: 0;
+                font-size: 20px;
+                font-weight: 500;
+                padding: 15px 10px;
+            }
+        }
+    }
+}
+.section-theme{
+    padding: 40px 0;
+    .single-theme{
+        margin-bottom: 20px;
+        transition: all .4s ease-in-out;
+        .name{
+            margin-bottom: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .info{
+            position: relative;
+            transition: all .4s ease-in-out;
+            overflow: hidden;
+            &:hover{
+                .description{
+                    display: flex !important;
+                }
+                img{
+                    transform: scale(1.2,1.2);
+                }
+            }
+            .img-theme{
+                transition: all .4s ease-in-out;
+                img{
+                    transition: all .4s ease-in-out;
+                    max-width: 100%;
+                }
+            }
+            .description{
+                transition: all .4s ease-in-out;
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                left: 0;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255,255,255,.5);
+                padding: 20px;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 700;
+                p{
+                    transition: all .4s ease-in-out;
+                }
+                a{
+                    color: #fb0303;
+                }
+            }
+        }
+    }
+    .box-link{
+        padding: 50px 0;
+        a{
+            background-color: #ffeb28;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+}
+.section-accordion{
+    .accordion{
+        .showFQ{
+            .card-header{
+                border-left: 1px solid red !important;
+                .num{
+                    color: red !important;
+                }
+                h2{
+                    button{
+                        color: red !important;
+                    }
+                }
+            }
+        }
+        .card{
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 0;
+            .card-header{
+                border: 0;
+                background-color: #fff;
+                padding: 15px 60px;
+                position: relative;
+                .num{
+                    position: absolute;
+                    left: 30px;
+                    top: 20px;
+                    font-size: 20px;
+                    font-weight: bolder;
+                }
+                h2{
+                    button{
+                        color: #000000;
+                        text-decoration: none;
+                        &:focus{
+                            box-shadow: none !important;
+                        }
+                    }
+                }
+            }
+            .card-body{
+                padding-left: 75px;
+                a{
+                    color: red;
+                }
+            }
+            .collapse.show{
+                border-left: 1px solid red;
+            }
+        }
+    }
+}
+.section-footer{
+    margin-top: 40px;
+    padding-top: 130px;
+    padding-bottom: 90px;
+    background-image: url('../img/event4_pic27.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    .title{
+        margin-bottom: 40px;
+        h2{
+            font-size: 68px;
+            line-height: 80px;
+            font-weight: 500;
+            letter-spacing: -1px;
+            color: red;
+        }
+    }
+    .body{
+        .info{
+            h6{
+                font-size: 15px;
+                line-height: 24px;
+                font-weight: 700;
+                letter-spacing: 0;
+            }
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    .social{
+        p{
+            font-size: 30px;
+            margin: 0 0 15px;
+            a{
+                color: red;
+            }
+        }
+    }
+}
+.section-copyright{
+    padding-top: 60px;
+    margin-bottom: 40px;
+    .content{
+        text-align: center;
+        color: #888;
+        a{
+            color: #888888;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
