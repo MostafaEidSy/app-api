@@ -24,6 +24,7 @@
                     <tr>
                         <td>ID</td>
                         <td>Name</td>
+                        <td>Username</td>
                         <td>Email</td>
                         <td>Avatar</td>
                         <td>Control</td>
@@ -32,6 +33,7 @@
                         <tr>
                             <td>{{$user->id}}</td>
                             <td>{{$user->name}}</td>
+                            <td>{{$user->username}}</td>
                             <td>{{$user->email}}</td>
                             <td>
                                 @if($user->avatar == null || $user->avatar == '')

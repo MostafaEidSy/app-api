@@ -25,9 +25,7 @@ a:hover {
 
 .section-content .links-auth {
   text-align: right;
-  padding: 20px 10px;
-  border-right: 1px solid #ccc;
-  background-color: rgba(0, 0, 0, 0.01); }
+  padding: 20px 10px; }
   .section-content .links-auth .p-title {
     background-color: #ffeb28;
     padding: 5px 15px;
@@ -67,5 +65,83 @@ a:hover {
       border-left: 3px solid #ccc; }
 .section-content ul.category li.active a {
   border-left: 3px solid #ccc; }
+
+.dashboard-content {
+  padding: 20px 10px;
+  border-left: 1px solid #ccc; }
+  .dashboard-content .title h4 {
+    background-color: #ffeb28;
+    padding: 5px 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .dashboard-content .info-p {
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    font-weight: 500; }
+  .dashboard-content .single-dashboard {
+    position: relative;
+    transition: all .4s ease-in-out;
+    overflow: hidden; }
+    .dashboard-content .single-dashboard:hover .description {
+      display: flex !important; }
+    .dashboard-content .single-dashboard:hover img {
+      transform: scale(1.2, 1.2); }
+    .dashboard-content .single-dashboard .img-dashboard {
+      transition: all .4s ease-in-out; }
+      .dashboard-content .single-dashboard .img-dashboard img {
+        max-width: 100%;
+        transition: all .4s ease-in-out; }
+    .dashboard-content .single-dashboard .description {
+      transition: all .4s ease-in-out;
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 235, 40, 0.7);
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700; }
+      .dashboard-content .single-dashboard .description p {
+        transition: all .4s ease-in-out;
+        font-size: 24px;
+        font-weight: 700; }
+
+.dashboard-account {
+  padding: 20px 0;
+  max-width: 500px;
+  margin: auto; }
+  .dashboard-account .title h4 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .dashboard-account .body .img-user {
+    margin-bottom: 20px; }
+    .dashboard-account .body .img-user img {
+      max-width: 100%;
+      width: 100px;
+      height: 100px; }
+
+.section-copyright {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-top: 60px;
+  margin-bottom: 40px; }
+  .section-copyright .content {
+    text-align: center;
+    color: #888; }
+    .section-copyright .content a {
+      color: #888888; }
+      .section-copyright .content a:hover {
+        color: red; }
 
 /*# sourceMappingURL=dashboard.css.map */

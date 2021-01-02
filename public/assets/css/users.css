@@ -31,10 +31,12 @@
       .users .body table tr td:nth-of-type(2) {
         text-align: left !important; }
       .users .body table tr td:nth-of-type(3) {
-        width: 400px; }
+        width: 300px; }
       .users .body table tr td:nth-of-type(4) {
-        width: 100px; }
+        width: 300px; }
       .users .body table tr td:nth-of-type(5) {
+        width: 100px; }
+      .users .body table tr td:nth-of-type(6) {
         width: 150px; }
 
 .create-users {

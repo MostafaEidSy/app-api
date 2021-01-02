@@ -27,6 +27,7 @@ class UsersController extends Controller
             $data['email']      = $request->email;
             $data['password']   = bcrypt($request->password);
             $data['birthday']   = $request->birthday;
+            $data['username']   = $request->username;
             if ($request->file('avatar')) {
                 $image = $request->file('avatar');
                 $filename = Str::slug($request->name . '_' . Carbon::now()) . '.' . $image->getClientOriginalExtension();
@@ -60,37 +61,44 @@ class UsersController extends Controller
             'email'         => 'required|email',
             'password'      => 'nullable|min:8',
             'birthday'      => 'nullable|date',
-            'avatar'        => 'nullable|image|mimes:png,jpg,gif'
+            'avatar'        => 'nullable|image|mimes:png,jpg,gif',
+            'username'      => 'required|min:5'
         ]);
         $id = $request->id;
         $check = User::where('id', $id)->first();
+        $username = User::where('id', '!=', $id)->whereUsername($request->username)->first();
         if ($check){
-            $data = [];
-            $data['name'] = $request->name;
-            $data['email'] = $request->email;
-            $data['birthday'] = $request->birthday;
-            if ($request->password != null){
-                $data['password'] = $request->password;
-            }
-            if($request->avatar != '' || $request->avatar != null){
-                if ($check->avatar != '' || $check->avatar != null){
-                    if (File::exists('/uploads/avatar/' . $check->avatar)){
-                        unlink('/uploads/avatar/' . $check->avatar);
-                    }
-                }
-                $image = $request->file('avatar');
-                $filename = Str::slug($request->name . '_' . Carbon::now()) . '.' . $image->getClientOriginalExtension();
-                $path = public_path('/uploads/avatar/' . $filename);
-                Image::make($image->getRealPath())->resize(300, 300, function ($constraint) {
-                    $constraint->aspectRatio();
-                })->save($path, 100);
-                $data['avatar'] = $filename;
-            }
-            $update = $check->update($data);
-            if ($update){
-                return redirect()->route('admin.users.index')->with(['msg' => 'Edit User successfully', 'status' => 'success']);
+            if($username){
+                return redirect()->route('admin.users.edit', ['id' => $id])->with(['msg' => 'Username Error : This value already exists', 'status' => 'danger'])->withInput();
             }else{
-                return redirect()->route('admin.users.index')->with(['msg' => 'Failed to Edit data', 'status' => 'danger']);
+                $data = [];
+                $data['name'] = $request->name;
+                $data['username'] = $request->username;
+                $data['email'] = $request->email;
+                $data['birthday'] = $request->birthday;
+                if ($request->password != null){
+                    $data['password'] = $request->password;
+                }
+                if($request->avatar != '' || $request->avatar != null){
+                    if ($check->avatar != '' || $check->avatar != null){
+                        if (File::exists('/uploads/avatar/' . $check->avatar)){
+                            unlink('/uploads/avatar/' . $check->avatar);
+                        }
+                    }
+                    $image = $request->file('avatar');
+                    $filename = Str::slug($request->name . '_' . Carbon::now()) . '.' . $image->getClientOriginalExtension();
+                    $path = public_path('/uploads/avatar/' . $filename);
+                    Image::make($image->getRealPath())->resize(300, 300, function ($constraint) {
+                        $constraint->aspectRatio();
+                    })->save($path, 100);
+                    $data['avatar'] = $filename;
+                }
+                $update = $check->update($data);
+                if ($update){
+                    return redirect()->route('admin.users.index')->with(['msg' => 'Edit User successfully', 'status' => 'success']);
+                }else{
+                    return redirect()->route('admin.users.index')->with(['msg' => 'Failed to Edit data', 'status' => 'danger']);
+                }
             }
         }else{
             return redirect()->route('admin.users.index')->with(['msg' => 'Sorry, the requested user does not exist', 'status' => 'danger']);

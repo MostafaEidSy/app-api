@@ -17,6 +17,7 @@
             <h6>Edit Users</h6>
         </div>
         <div class="body">
+            @include('admin.alerts.articles')
             <form method="post" action="{{route('admin.users.update')}}" enctype="multipart/form-data">
                 @csrf
                 <input type="hidden" name="id" value="{{$user->id}}">
@@ -24,6 +25,11 @@
                     <label for="name">Full Name <span class="text-danger">*</span></label>
                     <input type="text" name="name" id="name" class="form-control" required="required" value="{{old('name', $user->name)}}">
                     @error('name')<span class="text-danger">{{$message}}</span>@enderror
+                </div>
+                <div class="form-group">
+                    <label for="username">Username <span class="text-danger">*</span></label>
+                    <input type="text" name="username" id="username" class="form-control" required="required" value="{{old('username', $user->username)}}">
+                    @error('username')<span class="text-danger">{{$message}}</span>@enderror
                 </div>
                 <div class="form-group">
                     <label for="email">Email <span class="text-danger">*</span></label>

@@ -25,6 +25,11 @@
                     @error('name')<span class="text-danger">{{$message}}</span>@enderror
                 </div>
                 <div class="form-group">
+                    <label for="username">Username <span class="text-danger">*</span></label>
+                    <input type="text" name="username" id="username" class="form-control" required="required" value="{{old('username')}}">
+                    @error('username')<span class="text-danger">{{$message}}</span>@enderror
+                </div>
+                <div class="form-group">
                     <label for="email">Email <span class="text-danger">*</span></label>
                     <input type="email" name="email" id="email" class="form-control" required="required" value="{{old('email')}}">
                     @error('email')<span class="text-danger">{{$message}}</span>@enderror

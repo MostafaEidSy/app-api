@@ -1,3 +1,6 @@
+<?php
+    $categories = \App\Models\Category::with(['subCategory'])->get();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,10 +29,10 @@
             <div class="col-md-10">
                 <div class="links text-right">
                     @if(auth('web')->check())
-                        <a href="#" class="link">SERVICES</a>
-                        <a href="{{route('home.index')}}" class="link">DASHBOARD</a>
-                        <a href="#" class="link">ACCOUNT</a>
-                        <a href="#" class="link">LOGOUT</a>
+                        <a href="{{route('home.dashboard.services')}}" class="link">SERVICES</a>
+                        <a href="{{route('home.dashboard')}}" class="link">DASHBOARD</a>
+                        <a href="{{route('home.dashboard.account')}}" class="link">ACCOUNT</a>
+                        <a href="{{route('home.dashboard.logout')}}" class="link">LOGOUT</a>
                     @else
                         <a href="{{route('home.index')}}" class="link">{{__('home.HOME_START')}}</a>
                         <a href="{{route('home.dashboard')}}" class="link">{{__('home.HOME_DASHBOARD')}}</a>
@@ -51,24 +54,31 @@
                     </ul>
                     <hr class="links-hr">
                     <p class="p-title">MASTERMIND</p>
-                    <ul class="list-unstyled category">
-                        <li class="name"><a href="#">GRUNDLAGEN</a></li>
-                        <li class="per"><a href="#">MINDSET</a></li>
-                    </ul>
-                    <ul class="list-unstyled category">
-                        <li class="name"><a href="#">GESCHÄFTSMODELLE</a></li>
-                        <li class="per"><a href="#">SMMA</a></li>
-                        <li class="per"><a href="#">AMAZON</a></li>
-                    </ul>
+                    @if(auth('web')->check())
+                        @foreach($categories as $category)
+                            <ul class="list-unstyled category">
+                                <li class="name"><a href="{{route('home.dashboard.category.slug', $category->slug)}}">{{$category->name}}</a></li>
+                                @foreach($category->subCategory as $sub)
+                                    <li class="per"><a href="{{route('home.dashboard.sub.category.slug', ['category' => $category->slug, 'slug' => $sub->slug])}}">{{$sub->name}}</a></li>
+                                @endforeach
+                            </ul>
+                        @endforeach
+                    @endif
                 </div>
             </div>
             <div class="col-md-9">
-                <div class="content">
-                    <div class="title">
-                        <h4>DASHBOARD</h4>
-                    </div>
-                </div>
+                @yield('content')
             </div>
+        </div>
+    </div>
+</section>
+<section class="section-copyright">
+    <div class="container">
+        <div class="content">
+            © Agentur-Mastermind.com |
+            <a href="#">Impressum</a> |
+            <a href="#">Datenschutzerklärung</a> |
+            <a href="#">Partnerprogramm</a>
         </div>
     </div>
 </section>

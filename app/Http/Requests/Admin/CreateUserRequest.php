@@ -17,7 +17,8 @@ class CreateUserRequest extends FormRequest
             'email'         => 'required|email|unique:users',
             'password'      => 'required|min:8',
             'birthday'      => 'nullable|date',
-            'avatar'        => 'nullable|image|mimes:png,jpg,gif'
+            'avatar'        => 'nullable|image|mimes:png,jpg,gif',
+            'username'      => 'required|min:5|unique:users'
         ];
     }
     public function messages(){
@@ -31,7 +32,10 @@ class CreateUserRequest extends FormRequest
             'password.min'          => 'The Password Must Be At Least 8 Characters',
             'birthday.date'         => 'Birth Day Is Date',
             'avatar.image'          => 'This field should be an image only',
-            'avatar.mimes'          => 'Supported extensions are png, jpg, gif only'
+            'avatar.mimes'          => 'Supported extensions are png, jpg, gif only',
+            'username.required'     => 'Username Is Required',
+            'username.min'          => 'Username Must Be At Least 5 Characters',
+            'username.unique'       => 'Username already exists',
         ];
     }
 }

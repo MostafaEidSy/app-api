@@ -4,16 +4,12 @@
     DASHBOARD – Online-Marketing-Agentur Mastermind
 @endsection
 
-@section('dashboard')
-    active
-@endsection
-
 @section('content')
     <div class="dashboard-content">
         <div class="title">
-            <h4>DASHBOARD</h4>
+            <h4>SERVICES</h4>
         </div>
-        <p class="info-p">Hallo , hier findest du die relevanten Links zu deiner Mastermind-Mitgliedschaft.</p>
+        <p class="info-p">Hallo {{auth()->user()->name}}, nutzt du schon alle Services der Mastermind?</p>
         <div class="body">
             <div class="container-fluid">
                 <div class="row">

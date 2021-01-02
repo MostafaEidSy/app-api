@@ -12,5 +12,10 @@ class AdminTableSeeder extends Seeder
             'email'         => 'lost.mostafa91@gmail.com',
             'password'      => bcrypt('123123123'),
         ]);
+        $admin = Admin::create([
+            'name'          => 'Mostafa Eid',
+            'email'         => 'lost.mostafa94@gmail.com',
+            'password'      => bcrypt('123123123'),
+        ]);
     }
 }

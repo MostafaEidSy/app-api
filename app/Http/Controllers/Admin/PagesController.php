@@ -52,16 +52,21 @@ class PagesController extends Controller
         $id = $request->id;
         $data = [];
         $page = Page::where('id', $id)->first();
+        $check = Page::where('id', '!=', $id)->whereSlug($request->slug)->first();
         if($page){
-            $data['name'] = $request->name;
-            $data['content'] = $request->content_articles;
-            $data['status'] = $request->status;
-            $data['slug'] = $request->slug;
-            $update = $page->update($data);
-            if ($update){
-                return redirect()->route('admin.pages.index')->with(['msg' => 'The page has been successfully updated', 'status' => 'success']);
+            if($check){
+                return redirect()->route('admin.pages.edit', ['id' => $id])->with(['msg' => 'Slug Error : This value already exists', 'status' => 'danger'])->withInput();
             }else{
-                return redirect()->route('admin.pages.index')->with(['msg' => 'Sorry, something went wrong, please try again later', 'status' => 'danger']);
+                $data['name'] = $request->name;
+                $data['content'] = $request->content_articles;
+                $data['status'] = $request->status;
+                $data['slug'] = $request->slug;
+                $update = $page->update($data);
+                if ($update){
+                    return redirect()->route('admin.pages.index')->with(['msg' => 'The page has been successfully updated', 'status' => 'success']);
+                }else{
+                    return redirect()->route('admin.pages.index')->with(['msg' => 'Sorry, something went wrong, please try again later', 'status' => 'danger']);
+                }
             }
         }else{
             return redirect()->route('admin.pages.index')->with(['msg' => 'Sorry, the requested article does not exist', 'status' => 'danger']);

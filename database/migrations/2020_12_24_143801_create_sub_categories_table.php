@@ -6,17 +6,14 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateSubCategoriesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('sub_categories', function (Blueprint $table) {
             $table->id();
             $table->foreignId('parent')->constrained('categories')->onDelete('cascade');
             $table->string('name');
+            $table->text('description')->nullable();
+            $table->longText('content')->nullable();
             $table->string('slug')->unique();
             $table->tinyInteger('status')->default(1);
             $table->timestamps();

@@ -52,16 +52,21 @@ class ArticlesController extends Controller
         $id = $request->id;
         $data = [];
         $article = Article::where('id', $id)->first();
+        $check = Article::where('id', '!=', $id)->whereSlug($request->slug)->first();
         if($article){
-            $data['name'] = $request->name;
-            $data['content'] = $request->content_articles;
-            $data['status'] = $request->status;
-            $data['slug'] = $request->slug;
-            $update = $article->update($data);
-            if ($update){
-                return redirect()->route('admin.articles.index')->with(['msg' => 'The article has been successfully updated', 'status' => 'success']);
+            if($check){
+                return redirect()->route('admin.articles.edit', ['id' => $id])->with(['msg' => 'Slug Error : This value already exists', 'status' => 'danger'])->withInput();
             }else{
-                return redirect()->route('admin.articles.index')->with(['msg' => 'Sorry, something went wrong, please try again later', 'status' => 'danger']);
+                $data['name'] = $request->name;
+                $data['content'] = $request->content_articles;
+                $data['status'] = $request->status;
+                $data['slug'] = $request->slug;
+                $update = $article->update($data);
+                if ($update){
+                    return redirect()->route('admin.articles.index')->with(['msg' => 'The article has been successfully updated', 'status' => 'success']);
+                }else{
+                    return redirect()->route('admin.articles.index')->with(['msg' => 'Sorry, something went wrong, please try again later', 'status' => 'danger']);
+                }
             }
         }else{
             return redirect()->route('admin.articles.index')->with(['msg' => 'Sorry, the requested article does not exist', 'status' => 'danger']);
