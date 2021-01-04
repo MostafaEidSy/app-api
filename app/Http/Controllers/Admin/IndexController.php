@@ -27,4 +27,8 @@ class IndexController extends Controller
     public function dashboard(){
         return view('admin.index');
     }
+    public function logout(){
+        auth('admin')->logout();
+        return redirect()->route('admin.getLogin');
+    }
 }

@@ -12,7 +12,7 @@ class RedirectIfAuthenticated
     {
         if (Auth::guard($guard)->check()) {
             if ($guard == 'admin') {
-                return redirect(RouteServiceProvider::ADMIN);
+                return redirect('/cp/admin/dashboard');
             }else {
                 return redirect(RouteServiceProvider::HOME);
             }

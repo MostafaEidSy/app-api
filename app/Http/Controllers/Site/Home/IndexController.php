@@ -23,7 +23,7 @@ class IndexController extends Controller
     }
     public function login(LoginRequest $request){
         $remember_me = $request->has('remember_me') ? true : false;
-        if (auth()->guard('web')->attempt(['username' => $request->input("username"), 'password' => $request->input("password")], $remember_me)) {
+        if (auth()->attempt(['username' => $request->input("username"), 'password' => $request->input("password")], $remember_me)) {
             return redirect()->route('home.dashboard.mastermind');
         }
         return redirect()->route('home.getLogin')->with(
@@ -46,7 +46,7 @@ class IndexController extends Controller
         if($user){
             if ($this->loginAfterSignUp){
                 $remember_me = $request->has('remember_me') ? true : false;
-                if (auth()->guard('web')->attempt(['username' => $request->input("username"), 'password' => $request->input("password")], $remember_me)) {
+                if (auth()->attempt(['username' => $request->input("username"), 'password' => $request->input("password")], $remember_me)) {
                     return redirect()->route('home.dashboard.mastermind');
                 }else{
                     return redirect()->route('home.index');

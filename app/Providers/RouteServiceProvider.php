@@ -10,7 +10,7 @@ class RouteServiceProvider extends ServiceProvider
     protected $namespace = 'App\Http\Controllers';
 
     public const HOME = '/dashboard';
-    public const ADMIN = '/admin/dashboard';
+    public const ADMIN = '/cp/admin/dashboard';
 
     public function boot()
     {

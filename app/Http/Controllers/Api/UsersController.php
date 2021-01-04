@@ -49,4 +49,9 @@ class UsersController extends Controller
             "user" => $user
         ]);
     }
+    public function profile(){
+        $id = auth('api')->user()->id;
+        $user = User::where('id', $id)->first();
+        return response()->json($user);
+    }
 }

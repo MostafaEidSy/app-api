@@ -28,6 +28,8 @@ class CategoryController extends Controller
         $data['name'] = $request->name;
         $data['slug'] = $request->slug;
         $data['status'] = $request->status;
+        $data['description'] = $request->description;
+        $data['content'] = $request->category_content;
         if ($request->parent != '0' || $request->parent != 0){
             if($check2){
                 return redirect()->route('admin.category.create')->with(['msg' => 'Slug Error : This value already exists', 'status' => 'danger'])->withInput();
@@ -69,6 +71,8 @@ class CategoryController extends Controller
         $data['name'] = $request->name;
         $data['slug'] = $request->slug;
         $data['status'] = $request->status;
+        $data['description'] = $request->description;
+        $data['content'] = $request->category_content;
         if($request->type == 'category'){
             $category = Category::where('id', $id)->first();
             $check = Category::where('id', '!=', $id)->whereSlug($slug)->first();
