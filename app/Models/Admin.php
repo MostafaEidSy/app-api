@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Admin extends Authenticatable
 {
+//    protected $gaurd = 'admin';
     protected $guarded = [];
 
     public function posts(){

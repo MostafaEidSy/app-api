@@ -15,4 +15,8 @@ class InfoController extends Controller
         $allData = array_merge_recursive([$category, $subCategory]);
         return response()->json($allData);
     }
+    public function infoCategories($id){
+        $category = Category::where('id', $id)->first();
+        return response()->json($category);
+    }
 }

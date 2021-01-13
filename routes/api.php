@@ -10,4 +10,5 @@ Route::group(['namespace' => 'Api'], function (){
 Route::group(['namespace' => 'Api', 'middleware' => 'auth:api'], function (){
     Route::get('/profile', 'UsersController@profile')->name('api.profile');
     Route::get('/all-category', 'InfoController@categories')->name('api.all.category');
+    Route::get('/info-category/{id}', 'InfoController@infoCategories')->name('api.info.category');
 });
