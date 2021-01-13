@@ -16,7 +16,11 @@ class InfoController extends Controller
         return response()->json($allData);
     }
     public function infoCategories($id){
-        $category = Category::where('id', $id)->with(['subCategory'])->first();
+        $category = Category::where('id', $id)->first();
         return response()->json($category);
+    }
+    public function subCategory($parent){
+        $sub = SubCategories::where('parent', $parent)->get();
+        return response()->json($sub);
     }
 }

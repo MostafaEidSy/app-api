@@ -10,7 +10,13 @@ use Illuminate\Support\Facades\Validator;
 class UsersController extends Controller
 {
     public $loginAfterSignUp = true;
-
+    public function checkAuth(){
+        if (auth('api')->check()){
+            return response()->json('Auth', 200);
+        }else{
+            return response()->json('UnAuth', 401);
+        }
+    }
     public function login(Request $request){
         $validator = Validator::make($request->all(), [
             'email' => 'required|email',
