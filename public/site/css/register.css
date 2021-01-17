@@ -18,8 +18,21 @@ a:hover {
     position: relative;
     z-index: 1;
     box-sizing: border-box; }
+    @media (min-width: 100px) and (max-width: 991px) {
+      .header .section-links {
+        height: auto !important; } }
     .header .section-links .links {
       text-align: right; }
+      @media (min-width: 100px) and (max-width: 991px) {
+        .header .section-links .links ul {
+          background-color: #fff;
+          max-width: 300px;
+          margin: 20px 0 20px auto;
+          padding: 10px 20px;
+          border-radius: 20px;
+          box-shadow: 1px 1px 15px #999; }
+          .header .section-links .links ul li {
+            margin-bottom: 5px; } }
       .header .section-links .links a {
         font-weight: 500;
         color: #000;

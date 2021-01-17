@@ -1,0 +1,28 @@
+.profile{
+    .box-profile{
+        padding: 20px;
+        max-width: 600px;
+        width: 600px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px #ccc;
+        .title{
+            h4{
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 20px;
+                font-style: italic;
+                font-weight: bold;
+            }
+        }
+        .body{
+            .img-profile{
+                margin-bottom: 20px;
+                img{
+                    width: 200px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

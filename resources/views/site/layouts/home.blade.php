@@ -16,11 +16,31 @@
 <section class="header">
     <div class="container">
         <div class="section-links">
-            <div class="links">
-                <a href="{{route('home.index')}}" class="link">{{__('home.HOME_START')}}</a>
-                <a href="{{route('home.dashboard')}}" class="link">{{__('home.HOME_DASHBOARD')}}</a>
-                <a href="{{route('home.getLogin')}}" class="link">{{__('home.HOME_LOGIN')}}</a>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-end">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <div class="links">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a href="{{route('home.index')}}" class="link">{{__('home.HOME_START')}}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{route('home.dashboard')}}" class="link">{{__('home.HOME_DASHBOARD')}}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{route('login')}}" class="link">{{__('home.HOME_LOGIN')}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+{{--            <div class="links">--}}
+{{--                <a href="{{route('home.index')}}" class="link">{{__('home.HOME_START')}}</a>--}}
+{{--                <a href="{{route('home.dashboard')}}" class="link">{{__('home.HOME_DASHBOARD')}}</a>--}}
+{{--                <a href="{{route('home.getLogin')}}" class="link">{{__('home.HOME_LOGIN')}}</a>--}}
+{{--            </div>--}}
         </div>
         <div class="clearfix"></div>
         <div class="section-header-middle">

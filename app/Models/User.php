@@ -9,6 +9,7 @@ use Tymon\JWTAuth\Contracts\JWTSubject;
 
 class User extends Authenticatable implements JWTSubject
 {
+    protected $guard = 'web';
     protected $guarded = [];
     public function getJWTIdentifier()
     {

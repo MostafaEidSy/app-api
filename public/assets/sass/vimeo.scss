@@ -1,0 +1,114 @@
+.error-vimeo{
+    .error-content{
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px #cccccc;
+        .img{
+            margin-bottom: 20px;
+            text-align: center;
+            img{
+                max-width: 100%;
+            }
+        }
+        .desc{
+            h4{
+                font-size: 50px;
+                color: #999999;
+                font-weight: bold;
+                font-style: italic;
+                text-align: center;
+            }
+            h6{
+                font-size: 25px;
+                color: #999999;
+                font-weight: bold;
+                font-style: italic;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+                color: red;
+            }
+        }
+    }
+}
+.vimeo-setting{
+    .box-setting{
+        max-width: 600px;
+        width: 600px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px #ccc;
+        .img{
+            text-align: center;
+            margin-bottom: 20px;
+            img{
+                max-width: 100%;
+                width: 200px;
+            }
+        }
+    }
+}
+
+.vimeo{
+    padding: 40px 20px;
+    .title{
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px 10px 0 0;
+        border-bottom: 3px solid #4166d5;
+        h6{
+            margin: 0;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 600;
+        }
+    }
+    .body{
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 0 0 10px 10px;
+        table{
+            tr{
+                &:nth-of-type(1){
+                    background-color: #4166d5;
+                    color: #ffffff;
+                    td{
+                        text-align: center;
+                    }
+                }
+                td{
+                    padding: 5px 10px;
+                    vertical-align: middle;
+                    text-align: center;
+                    img{
+                        max-width: 100%;
+                    }
+                    &:nth-of-type(1){
+                        width: 250px;
+                    }
+                    &:nth-of-type(2){
+                        width: 200px;
+                    }
+                    &:nth-of-type(3){
+                        width: 200px;
+                    }
+                    &:nth-of-type(4){
+                        width: 150px;
+                    }
+                    &:nth-of-type(5){
+                        width: 150px;
+                    }
+                    &:nth-of-type(6){
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}

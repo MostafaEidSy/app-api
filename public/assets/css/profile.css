@@ -1,0 +1,20 @@
+.profile .box-profile {
+  padding: 20px;
+  max-width: 600px;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px #ccc; }
+  .profile .box-profile .title h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: bold; }
+  .profile .box-profile .body .img-profile {
+    margin-bottom: 20px; }
+    .profile .box-profile .body .img-profile img {
+      width: 200px;
+      max-width: 100%; }
+
+/*# sourceMappingURL=profile.css.map */

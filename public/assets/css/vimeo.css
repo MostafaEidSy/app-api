@@ -1,0 +1,84 @@
+.error-vimeo .error-content {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px #cccccc; }
+  .error-vimeo .error-content .img {
+    margin-bottom: 20px;
+    text-align: center; }
+    .error-vimeo .error-content .img img {
+      max-width: 100%; }
+  .error-vimeo .error-content .desc h4 {
+    font-size: 50px;
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center; }
+  .error-vimeo .error-content .desc h6 {
+    font-size: 25px;
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center; }
+  .error-vimeo .error-content .desc p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: red; }
+
+.vimeo-setting .box-setting {
+  max-width: 600px;
+  width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px #ccc; }
+  .vimeo-setting .box-setting .img {
+    text-align: center;
+    margin-bottom: 20px; }
+    .vimeo-setting .box-setting .img img {
+      max-width: 100%;
+      width: 200px; }
+
+.vimeo {
+  padding: 40px 20px; }
+  .vimeo .title {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid #4166d5; }
+    .vimeo .title h6 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 600; }
+  .vimeo .body {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px; }
+    .vimeo .body table tr:nth-of-type(1) {
+      background-color: #4166d5;
+      color: #ffffff; }
+      .vimeo .body table tr:nth-of-type(1) td {
+        text-align: center; }
+    .vimeo .body table tr td {
+      padding: 5px 10px;
+      vertical-align: middle;
+      text-align: center; }
+      .vimeo .body table tr td img {
+        max-width: 100%; }
+      .vimeo .body table tr td:nth-of-type(1) {
+        width: 250px; }
+      .vimeo .body table tr td:nth-of-type(2) {
+        width: 200px; }
+      .vimeo .body table tr td:nth-of-type(3) {
+        width: 200px; }
+      .vimeo .body table tr td:nth-of-type(4) {
+        width: 150px; }
+      .vimeo .body table tr td:nth-of-type(5) {
+        width: 150px; }
+      .vimeo .body table tr td:nth-of-type(6) {
+        width: 150px; }
+
+/*# sourceMappingURL=vimeo.css.map */

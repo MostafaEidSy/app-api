@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\Auth;
 
 class IndexController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('guest')->except('logout');
+        $this->middleware('guest:admin')->except('logout');
+    }
+
     public function getLogin(){
         return view('admin.login');
     }
@@ -23,12 +29,5 @@ class IndexController extends Controller
                 'alert-type' => 'danger'
             ]
         );
-    }
-    public function dashboard(){
-        return view('admin.index');
-    }
-    public function logout(){
-        auth('admin')->logout();
-        return redirect()->route('admin.getLogin');
     }
 }

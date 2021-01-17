@@ -27,7 +27,23 @@ a{
         position: relative;
         z-index: 1;
         box-sizing: border-box;
+        @media (min-width: 100px) and (max-width: 991px) {
+            height: auto !important;
+        }
         .links{
+            @media (min-width: 100px) and (max-width: 991px) {
+                ul{
+                    background-color: #fff;
+                    max-width: 300px;
+                    margin: 20px 0 20px auto;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    box-shadow: 1px 1px 15px #999;
+                    li{
+                        margin-bottom: 5px;
+                    }
+                }
+            }
             text-align: right;
             a{
                 font-weight: 500;

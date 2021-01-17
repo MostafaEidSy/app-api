@@ -3,9 +3,9 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['namespace' => 'Site\Home', 'middleware' => 'guest:web'], function (){
+Route::group(['namespace' => 'Site\Home', 'middleware' => 'guest'], function (){
    Route::get('/', 'IndexController@index')->name('home.index');
-   Route::get('/login', 'IndexController@getLogin')->name('home.getLogin');
+   Route::get('/login', 'IndexController@getLogin')->name('login');
    Route::post('/login', 'IndexController@login')->name('home.login');
    Route::get('/registrierung', 'IndexController@getRegister')->name('home.getRegister');
    Route::post('/register', 'IndexController@register')->name('home.register');

@@ -46,7 +46,7 @@
 <section class="section-content">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-lg-3">
                 <div class="links-auth">
                     <p class="p-title">ALLGEMEIN</p>
                     <ul class="list-unstyled home">
@@ -66,7 +66,7 @@
                     @endif
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-lg-9">
                 @yield('content')
             </div>
         </div>

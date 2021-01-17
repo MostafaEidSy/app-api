@@ -2,13 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::group(['prefix' => 'cp/admin', 'namespace' => 'Admin', 'middleware' => 'guest:admin'], function (){
-    Route::get('/', 'IndexController@getLogin')->name('admin.getLogin');
-    Route::post('login', 'IndexController@login')->name('admin.login');
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin\Auth', 'middleware' => 'guest:admin'], function (){
+    Route::get('/login/cp', 'LoginController@getLogin')->name('admin.login');
+    Route::post('/login/cp', 'LoginController@login')->name('admin.getLogin');
 });
 Route::group(['middleware' => 'auth:admin', 'prefix' => 'cp/admin', 'namespace' => 'Admin'], function (){
-    Route::get('/dashboard', 'IndexController@dashboard')->name('admin.dashboard');
-    Route::get('/logout', 'IndexController@logout')->name('admin.logout');
+    Route::get('/dashboard', 'GenralController@dashboard')->name('admin.dashboard');
+    Route::get('/logout', 'GenralController@logout')->name('admin.logout');
+    Route::get('/profile', 'GenralController@profile')->name('admin.profile');
+    Route::post('/profile', 'GenralController@update')->name('admin.profile.update');
     // Start Routes Section Users
     Route::group(['prefix' => 'users'], function (){
         Route::get('/', 'UsersController@index')->name('admin.users.index');
@@ -54,6 +56,14 @@ Route::group(['middleware' => 'auth:admin', 'prefix' => 'cp/admin', 'namespace' 
         Route::get('/delete/{id}', 'ArticlesController@delete')->name('admin.articles.delete');
     });
     // End Routes Section Articles
+
+    // Start Routes Section Vimeo
+    Route::group(['prefix' => 'vimeo'], function (){
+        Route::get('/', 'VimeoController@index')->name('admin.vimeo.index');
+        Route::get('/setting', 'VimeoController@setting')->name('admin.vimeo.setting');
+        Route::post('/setting', 'VimeoController@updateSetting')->name('admin.vimeo.setting.update');
+    });
+    // End Routes Section Vimeo
 
     // Start Routes Section Front End
     Route::group(['prefix' => 'frontend'], function (){

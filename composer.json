@@ -16,7 +16,9 @@
         "intervention/image": "^2.5",
         "laravel/framework": "^7.29",
         "laravel/tinker": "^2.5",
+        "laravel/ui": "2.4",
         "tymon/jwt-auth": "^1.0",
+        "vimeo/laravel": "^5.6",
         "vimeo/vimeo-api": "^3.0"
     },
     "require-dev": {

@@ -3,14 +3,24 @@ a:hover {
 
 .header {
   padding: 10px 0; }
+  @media (min-width: 100px) and (max-width: 991px) {
+    .header .logo {
+      text-align: center !important; } }
   .header .logo img {
     max-width: 100%; }
+    @media (min-width: 100px) and (max-width: 991px) {
+      .header .logo img {
+        max-width: 300px; } }
   .header .links {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 100%;
     padding: 0 20px; }
+    @media (min-width: 100px) and (max-width: 991px) {
+      .header .links {
+        justify-content: center !important;
+        margin-top: 15px; } }
     .header .links a {
       font-weight: 500;
       color: #000;
@@ -67,8 +77,10 @@ a:hover {
   border-left: 3px solid #ccc; }
 
 .dashboard-content {
-  padding: 20px 10px;
-  border-left: 1px solid #ccc; }
+  padding: 20px 10px; }
+  @media (min-width: 992px) {
+    .dashboard-content {
+      border-left: 1px solid #ccc; } }
   .dashboard-content .title h4 {
     background-color: #ffeb28;
     padding: 5px 15px;
@@ -80,16 +92,25 @@ a:hover {
     padding: 5px 15px;
     margin-bottom: 20px;
     font-weight: 500; }
+    @media (min-width: 100px) and (max-width: 991px) {
+      .dashboard-content .info-p {
+        text-align: center; } }
   .dashboard-content .single-dashboard {
     position: relative;
     transition: all .4s ease-in-out;
     overflow: hidden; }
+    @media (min-width: 100px) and (max-width: 991px) {
+      .dashboard-content .single-dashboard {
+        margin-bottom: 20px; } }
     .dashboard-content .single-dashboard:hover .description {
       display: flex !important; }
     .dashboard-content .single-dashboard:hover img {
       transform: scale(1.2, 1.2); }
     .dashboard-content .single-dashboard .img-dashboard {
       transition: all .4s ease-in-out; }
+      @media (min-width: 100px) and (max-width: 991px) {
+        .dashboard-content .single-dashboard .img-dashboard {
+          text-align: center; } }
       .dashboard-content .single-dashboard .img-dashboard img {
         max-width: 100%;
         transition: all .4s ease-in-out; }
@@ -109,6 +130,11 @@ a:hover {
       text-align: center;
       font-size: 18px;
       font-weight: 700; }
+      @media (min-width: 100px) and (max-width: 991px) {
+        .dashboard-content .single-dashboard .description {
+          display: flex !important;
+          position: static !important;
+          background-color: transparent !important; } }
       .dashboard-content .single-dashboard .description p {
         transition: all .4s ease-in-out;
         font-size: 24px;

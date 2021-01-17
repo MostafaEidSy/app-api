@@ -17,7 +17,7 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-md-3">
                 <div class="logo">
-                    <a href="{{route('admin.getLogin')}}">
+                    <a href="{{route('admin.login')}}">
                         <img src="{{asset('assets/img/logo.png')}}" alt="Logo">
                     </a>
                 </div>
@@ -27,7 +27,7 @@
                     <h2 class="text-center">LogIn To Admin Dashboard</h2>
                     @include('admin.alerts.alert')
                     <div class="form">
-                        <form method="post" action="{{route('admin.login')}}">
+                        <form method="post" action="{{route('admin.getLogin')}}">
                             @csrf
                             <div class="form-group">
                                 <input type="email" name="email" id="email" class="form-control" autocomplete="off" placeholder="Email" required="required">
