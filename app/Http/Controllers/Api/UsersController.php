@@ -18,20 +18,24 @@ class UsersController extends Controller
         }
     }
     public function login(Request $request){
-        $validator = Validator::make($request->all(), [
-            'email' => 'required|email',
-            'password' => 'required|min:8',
-        ]);
-        if ($validator->failed()) {
-            return response()->json(['error' => true, 'message' => $validator->errors()], 401);
-        }
-        $credentials = request(['email', 'password']);
+        try {
+            $validator = Validator::make($request->all(), [
+                'email' => 'required|email',
+                'password' => 'required|min:8',
+            ]);
+            if ($validator->failed()) {
+                return response()->json(['error' => true, 'message' => $validator->errors()], 401);
+            }
+            $credentials = request(['email', 'password']);
 
-        $token = auth('api')->attempt($credentials);
-        if (!$token) {
-            return response()->json(['message' => 'There Is An Error In The Data'], 401);
+            $token = auth('api')->attempt($credentials);
+            if (!$token) {
+                return response()->json(['message' => 'There Is An Error In The Data'], 401);
+            }
+            return response()->json(['token' => $token], 200);
+        }catch (\Exception $e){
+            return response()->json(['error' => $e->getMessage()], 500);
         }
-        return response()->json(['token' => $token], 200);
     }
     public function register(Request $request){
         $this->validate($request, [
