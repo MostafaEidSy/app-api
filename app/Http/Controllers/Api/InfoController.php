@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Article;
 use App\Models\Category;
 use App\Models\SubCategories;
 use Illuminate\Http\Request;
@@ -22,5 +23,9 @@ class InfoController extends Controller
     public function subCategory($parent){
         $sub = SubCategories::where('parent', $parent)->get();
         return response()->json($sub);
+    }
+    public function articles(){
+        $articles = Article::all();
+        return response()->json($articles);
     }
 }

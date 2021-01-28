@@ -13,4 +13,6 @@ Route::group(['namespace' => 'Api', 'middleware' => 'auth:api'], function (){
     Route::get('/all-category', 'InfoController@categories')->name('api.all.category');
     Route::get('/info-category/{id}', 'InfoController@infoCategories')->name('api.info.category');
     Route::get('/sub-category/{parent}', 'InfoController@subCategory')->name('api.sub.category');
+    Route::get('/all-articles', 'InfoController@articles')->name('api.all.articles');
+    Route::get('/search/{keyword}', 'InfoController@search')->name('api.search');
 });
