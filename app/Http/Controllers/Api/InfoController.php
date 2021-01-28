@@ -25,7 +25,7 @@ class InfoController extends Controller
         return response()->json($sub);
     }
     public function articles(){
-        $articles = Article::all();
+        $articles = Article::with(['category', 'subCategory'])->get();
         return response()->json($articles);
     }
 }

@@ -19,12 +19,14 @@ class ArticleTableSeeder extends Seeder
         $post = Article::create([
             'admin_id'          => $id->id,
             'name'              => $fac->title,
+            'category_id'       => \App\Models\Category::where('id', '1')->first()->id,
             'content'           => $fac->paragraph,
             'slug'              => $fac->slug
         ]);
         $post = Article::create([
             'admin_id'          => $id->id,
             'name'              => $fac->title,
+            'sub_category_id'   => \App\Models\SubCategories::where('id', '1')->first()->id,
             'content'           => $fac->paragraph,
             'slug'              => $fac->slug
         ]);
