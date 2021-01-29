@@ -30,7 +30,7 @@ class InfoController extends Controller
     }
     public function search($keyword){
         $articles = Article::with(['category'])->get();
-        $search = $articles->search($keyword)->get();
+        $search = $articles->search($keyword);
         return response()->json($search, 200);
     }
 }
