@@ -28,4 +28,9 @@ class InfoController extends Controller
         $articles = Article::with(['category', 'subCategory'])->get();
         return response()->json($articles);
     }
+    public function search($keyword){
+        $articles = Article::with(['category'])->get();
+        $search = $articles->search($keyword)->get();
+        return response()->json($search, 200);
+    }
 }
