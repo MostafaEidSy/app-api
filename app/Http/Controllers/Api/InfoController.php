@@ -29,7 +29,7 @@ class InfoController extends Controller
         return response()->json($articles);
     }
     public function search($keyword){
-        $articles = Article::with(['category'])->get();
+        $articles = Article::with(['category'])->where('name', 'like' , '%'.$keyword.'%')->orWhere('content', 'like' , '%'.$keyword.'%')->get();
         $search = $articles->search($keyword);
         return response()->json($search, 200);
     }
