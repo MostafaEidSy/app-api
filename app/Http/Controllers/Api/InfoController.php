@@ -30,7 +30,6 @@ class InfoController extends Controller
     }
     public function search($keyword){
         $articles = Article::with(['category'])->where('name', 'like' , '%'.$keyword.'%')->orWhere('content', 'like' , '%'.$keyword.'%')->get();
-        $search = $articles->search($keyword);
-        return response()->json($search, 200);
+        return response()->json($articles, 200);
     }
 }
