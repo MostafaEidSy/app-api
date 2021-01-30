@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends Model
 {
     protected $guarded = [];
+    protected $casts = [
+        'created_at'  => 'datetime:Y-m-d',
+    ];
 
     public function user(){
         return $this->belongsTo(Admin::class, 'admin_id', 'id');

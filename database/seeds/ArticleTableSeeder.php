@@ -18,27 +18,81 @@ class ArticleTableSeeder extends Seeder
         $id = Admin::where('id', 1)->first();
         $post = Article::create([
             'admin_id'          => $id->id,
-            'name'              => $fac->title,
+            'name'              => $fac->name,
             'category_id'       => \App\Models\Category::where('id', '1')->first()->id,
             'content'           => $fac->paragraph,
             'slug'              => $fac->slug
         ]);
         $post = Article::create([
             'admin_id'          => $id->id,
-            'name'              => $fac->title,
+            'name'              => $fac->name,
             'sub_category_id'   => \App\Models\SubCategories::where('id', '1')->first()->id,
             'content'           => $fac->paragraph,
             'slug'              => $fac->slug
         ]);
         $post = Article::create([
             'admin_id'          => $id->id,
-            'name'              => $fac->title,
+            'name'              => $fac->name,
             'content'           => $fac->paragraph,
             'slug'              => $fac->slug
         ]);
         $post = Article::create([
             'admin_id'          => $id->id,
-            'name'              => $fac->paragraph(4),
+            'name'              => $fac->name,
+            'content'           => $fac->paragraph,
+            'status'            => 0,
+            'slug'              => $fac->slug
+        ]);
+        $post = Article::create([
+            'admin_id'          => $id->id,
+            'name'              => $fac->name,
+            'category_id'       => \App\Models\Category::where('id', '1')->first()->id,
+            'content'           => $fac->paragraph,
+            'slug'              => $fac->slug
+        ]);
+        $post = Article::create([
+            'admin_id'          => $id->id,
+            'name'              => $fac->name,
+            'sub_category_id'   => \App\Models\SubCategories::where('id', '1')->first()->id,
+            'content'           => $fac->paragraph,
+            'slug'              => $fac->slug
+        ]);
+        $post = Article::create([
+            'admin_id'          => $id->id,
+            'name'              => $fac->name,
+            'content'           => $fac->paragraph,
+            'slug'              => $fac->slug
+        ]);
+        $post = Article::create([
+            'admin_id'          => $id->id,
+            'name'              => $fac->name,
+            'content'           => $fac->paragraph,
+            'status'            => 0,
+            'slug'              => $fac->slug
+        ]);
+        $post = Article::create([
+            'admin_id'          => $id->id,
+            'name'              => $fac->name,
+            'category_id'       => \App\Models\Category::where('id', '1')->first()->id,
+            'content'           => $fac->paragraph,
+            'slug'              => $fac->slug
+        ]);
+        $post = Article::create([
+            'admin_id'          => $id->id,
+            'name'              => $fac->name,
+            'sub_category_id'   => \App\Models\SubCategories::where('id', '1')->first()->id,
+            'content'           => $fac->paragraph,
+            'slug'              => $fac->slug
+        ]);
+        $post = Article::create([
+            'admin_id'          => $id->id,
+            'name'              => $fac->name,
+            'content'           => $fac->paragraph,
+            'slug'              => $fac->slug
+        ]);
+        $post = Article::create([
+            'admin_id'          => $id->id,
+            'name'              => $fac->name,
             'content'           => $fac->paragraph,
             'status'            => 0,
             'slug'              => $fac->slug
