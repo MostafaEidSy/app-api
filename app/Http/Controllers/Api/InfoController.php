@@ -33,7 +33,7 @@ class InfoController extends Controller
         return response()->json($articles, 200);
     }
     public function showArticle($id){
-        $article = Article::where('id', $id)->first();
+        $article = Article::with(['user', 'category'])->where('id', $id)->first();
         return response()->json($article, 200);
     }
 }
