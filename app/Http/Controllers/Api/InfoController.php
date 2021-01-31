@@ -32,4 +32,8 @@ class InfoController extends Controller
         $articles = Article::with(['category'])->where('name', 'like' , '%'.$keyword.'%')->orWhere('content', 'like' , '%'.$keyword.'%')->get();
         return response()->json($articles, 200);
     }
+    public function showArticle($id){
+        $article = Article::where('id', $id)->first();
+        return response()->json($article, 200);
+    }
 }
