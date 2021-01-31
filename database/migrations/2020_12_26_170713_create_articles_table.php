@@ -14,6 +14,7 @@ class CreateArticlesTable extends Migration
             $table->foreignId('category_id')->nullable()->constrained('categories')->onDelete('set null');
             $table->foreignId('sub_category_id')->nullable()->constrained('sub_categories')->onDelete('set null');
             $table->string('name');
+            $table->text('image_mobile')->nullable();
             $table->longText('content')->nullable();
             $table->string('slug')->unique();
             $table->tinyInteger('status')->default(1);
