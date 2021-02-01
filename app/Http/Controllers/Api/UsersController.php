@@ -41,13 +41,15 @@ class UsersController extends Controller
         $this->validate($request, [
             "name" => "required|string|min:4",
             "email" => "required|email|unique:users",
-            "password" => "required|min:6|max:10"
+            "password" => "required|min:6",
+            "username" => "required|min:6|unique:users"
         ]);
 
         $user = new User();
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = bcrypt($request->password);
+        $user->username = $request->username;
         $user->save();
 
         if ($this->loginAfterSignUp) {
